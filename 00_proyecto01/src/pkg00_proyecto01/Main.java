@@ -35,6 +35,20 @@ public class Main {
         System.out.println("especie: "+ma2.especie);
         System.out.println("edad: "+ma2.edad);
         System.out.println("genero: "+ma2.genero);
+        
+        Persona per1 = new Persona();
+        System.out.println("Valores en los atributos de per1:");
+        System.out.println("nombre: "+per1.nombre);
+        System.out.println("edad: "+per1.edad);
+        System.out.println("genero: "+per1.genero);
+        System.out.println("dni: "+per1.dni);
+        
+        Persona per2 = new Persona("Gerardo", 42, 'M', "1401198201055");
+        System.out.println("Valores en los atributos de per2:");
+        System.out.println("nombre: "+per2.nombre);
+        System.out.println("edad: "+per2.edad);
+        System.out.println("genero: "+per2.genero);
+        System.out.println("dni: "+per2.dni);
     }
     
 }
