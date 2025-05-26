@@ -1,7 +1,7 @@
 package pkg00_proyecto01;
 
 /**
- * Clase que describe a un vehiculo
+ * <b>Clase que <u>describe</u> a un vehiculo</b>
  * @author Gerardo Portillo
  * @since 2025-05-26
  */
@@ -23,7 +23,7 @@ public class Carro {
         this.anio = 0;
     }
     /**
-     * Construye un objeto de Clase Carro
+     * Construye un objeto de Clase <font color=red>Carro</font>
      * @param marca la marca del vehiculo (Toyota, Ford, etc.)
      * @param modelo el modelo del vehiculo (Corolla, Explorer, etc.)
      * @param color el color del vehiculo
@@ -37,7 +37,9 @@ public class Carro {
     }
     //metodos
     /**
-     * Imprime una ficha con informacion del vehiculo
+     * Imprime una ficha con informacion del vehiculo<br/>
+     * <hr>
+     * <img src="https://sistemas2g.com/site/images/Logo2018.png"/>
      */
     public void imprimir(){
         System.out.println("********** CARRO **********");
