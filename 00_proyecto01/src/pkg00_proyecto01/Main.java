@@ -45,6 +45,13 @@ public class Main {
         System.out.println("Valores en los atributos de per2:");
         per2.imprimir();
         System.out.println("per2 es mayor de edad? "+per2.esMayorDeEdad());
+        
+        Carro car1 = new Carro();
+        car1.imprimir();
+        
+        Carro car2 = new Carro("Honda", "Civic", "Negro", 2004);
+        car2.imprimir();
+        
     }
     
 }
