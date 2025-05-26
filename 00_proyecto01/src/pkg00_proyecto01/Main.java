@@ -38,17 +38,13 @@ public class Main {
         
         Persona per1 = new Persona();
         System.out.println("Valores en los atributos de per1:");
-        System.out.println("nombre: "+per1.nombre);
-        System.out.println("edad: "+per1.edad);
-        System.out.println("genero: "+per1.genero);
-        System.out.println("dni: "+per1.dni);
+        per1.imprimir();
+        System.out.println("per1 es mayor de edad? "+per1.esMayorDeEdad());
         
         Persona per2 = new Persona("Gerardo", 42, 'M', "1401198201055");
         System.out.println("Valores en los atributos de per2:");
-        System.out.println("nombre: "+per2.nombre);
-        System.out.println("edad: "+per2.edad);
-        System.out.println("genero: "+per2.genero);
-        System.out.println("dni: "+per2.dni);
+        per2.imprimir();
+        System.out.println("per2 es mayor de edad? "+per2.esMayorDeEdad());
     }
     
 }

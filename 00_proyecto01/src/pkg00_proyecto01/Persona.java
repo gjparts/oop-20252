@@ -50,5 +50,25 @@ public class Persona {
         this.genero = 'X';
         this.dni = "no tiene";
     }
+    //metodos
+    public void imprimir(){
+        System.out.println("********* Perfil de Persona *********");
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Edad: "+this.edad+" años.");
+        System.out.println("Genero: "+this.getGeneroDescripcion());
+        System.out.println("DNI: "+this.dni);
+    }
+    public boolean esMayorDeEdad(){
+        if( this.edad > 18 )
+            return true;
+        else
+            return false;
+    }
+    public String getGeneroDescripcion(){
+        if( this.genero == 'M' ) return "Masculino";
+        if( this.genero == 'F' ) return "Femenino";
+        if( this.genero == 'X' ) return "Otros";
+        return "Sin configurar en el programa";
+    }
 }
 
