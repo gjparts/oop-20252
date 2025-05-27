@@ -1,6 +1,7 @@
 package pkg00_proyecto01;
 
 /**
+ * Javadoc
  * <b>Clase que <u>describe</u> a un vehiculo</b>
  * @author Gerardo Portillo
  * @since 2025-05-26

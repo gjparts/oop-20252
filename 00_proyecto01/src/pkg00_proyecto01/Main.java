@@ -52,6 +52,10 @@ public class Main {
         Carro car2 = new Carro("Honda", "Civic", "Negro", 2004);
         car2.imprimir();
         
+        Empleado em1 = new Empleado("Filomeno Colinas", 77, 'M', 100000, 'P');
+        em1.imprimir();
+        //no se tiene acceso a la edad desde fuera de la clase porque es private:
+        System.out.println("La edad de em1 es: "+em1.getEdad());
     }
     
 }
