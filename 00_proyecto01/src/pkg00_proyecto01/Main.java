@@ -56,6 +56,9 @@ public class Main {
         em1.imprimir();
         //no se tiene acceso a la edad desde fuera de la clase porque es private:
         System.out.println("La edad de em1 es: "+em1.getEdad());
+        //sobreescribir la edad de em1
+        em1.setEdad(18);
+        System.out.println("La edad de em1 es: "+em1.getEdad());
     }
     
 }
