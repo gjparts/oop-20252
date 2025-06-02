@@ -19,13 +19,15 @@ public class Estudiante {
     private String carrera;
     //constructor
     public Estudiante(String nombre, String cuenta, String dni, int edad, char genero, float promedio, String carrera){
-        this.nombre = nombre;
-        this.cuenta = cuenta;
-        this.dni = dni;
-        this.edad = edad;
-        this.genero = genero;
-        this.promedio = promedio;
-        this.carrera = carrera;
+        //aplicacion de los metodos set en el constructor
+        //porque la reglas se deben cumplir en cualquier entrada de datos
+        this.setNombre(nombre);
+        this.setCuenta(cuenta);
+        this.setDni(dni);
+        this.setEdad(edad);
+        this.setGenero(genero);
+        this.setPromedio(promedio);
+        this.setCarrera(carrera);
     }
     //metodos
     public void imprimir(){

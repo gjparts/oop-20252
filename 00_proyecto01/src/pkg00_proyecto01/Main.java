@@ -59,6 +59,11 @@ public class Main {
         //sobreescribir la edad de em1
         em1.setEdad(18);
         System.out.println("La edad de em1 es: "+em1.getEdad());
+        
+        Estudiante es1 = new Estudiante("Estevancito Maravilla","20012002049","1401198201055",18,'M',0,"Ing. Sistemas");
+        //se puede tambien cambiar los datos despues de construir:
+        es1.setCarrera("Ingeniería en Sistemas");
+        es1.imprimir();
     }
     
 }
