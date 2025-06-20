@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6">
+  <diagram id="7cXqyKgb3yeAaLoGXqHs" name="Página-1">
+    <mxGraphModel dx="883" dy="423" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3SvXRs9iV1hYQki73H2o-1" value="CuentaAhorro" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=Courier New;" parent="1" vertex="1">
+          <mxGeometry x="290" y="130" width="200" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="3SvXRs9iV1hYQki73H2o-2" value="+ numero: String&#xa;- banco: Banco&#xa;- cliente: Cliente&#xa;+ tarjeta: TarjetaDebito&#xa;- saldo: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;" parent="3SvXRs9iV1hYQki73H2o-1" vertex="1">
+          <mxGeometry y="26" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3SvXRs9iV1hYQki73H2o-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="3SvXRs9iV1hYQki73H2o-1" vertex="1">
+          <mxGeometry y="106" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3SvXRs9iV1hYQki73H2o-4" value="+ depositar(monto): void&#xa;+ retirar(monto): void&#xa;+ imprimir(): float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;" parent="3SvXRs9iV1hYQki73H2o-1" vertex="1">
+          <mxGeometry y="114" width="200" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-1" value="Cliente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="50" y="62" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-2" value="+ nombre: String&#xa;+ dni: String&#xa;+ telefono: int&#xa;+ correo: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;" vertex="1" parent="v_BKfeOyPPoS5dGcqgbi-1">
+          <mxGeometry y="26" width="200" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-6" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontFamily=Courier New;entryX=0.557;entryY=-0.014;entryDx=0;entryDy=0;exitX=0.993;exitY=-0.054;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="v_BKfeOyPPoS5dGcqgbi-2" target="3SvXRs9iV1hYQki73H2o-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="110" as="sourcePoint" />
+            <mxPoint x="455" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="401" y="84" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-7" value="Banco" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="50" y="270" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-8" value="+ nombre: String&#xa;+ pais: String&#xa;+ telefono: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;" vertex="1" parent="v_BKfeOyPPoS5dGcqgbi-7">
+          <mxGeometry y="26" width="200" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-9" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontFamily=Courier New;entryX=0.505;entryY=1.054;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryPerimeter=0;" edge="1" parent="1" source="v_BKfeOyPPoS5dGcqgbi-8" target="3SvXRs9iV1hYQki73H2o-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="310" as="sourcePoint" />
+            <mxPoint x="422" y="346" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250" y="350" />
+              <mxPoint x="391" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-10" value="TarjetaDebito" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="550" y="90" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-11" value="+ numero: String&#xa;+ cvv: String&#xa;+ expiracion: Calendar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;" vertex="1" parent="v_BKfeOyPPoS5dGcqgbi-10">
+          <mxGeometry y="26" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-12" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;fontFamily=Courier New;exitX=0.529;exitY=1.037;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;exitPerimeter=0;" edge="1" parent="1" source="v_BKfeOyPPoS5dGcqgbi-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="320" as="sourcePoint" />
+            <mxPoint x="492" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="656" y="200" />
+              <mxPoint x="492" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-13" value="&lt;div&gt;*** Cuenta Bancaria ***&lt;/div&gt;&lt;div&gt;Numero: 123456&lt;/div&gt;&lt;div&gt;Banco: Banco de Occidente&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cliente: Pepe Cortizona&lt;/span&gt;&lt;/div&gt;&lt;div&gt;DNI: 1234123412345&lt;/div&gt;&lt;div&gt;Telefono: 12345678&lt;/div&gt;&lt;div&gt;E-Mail: pepe@algo.com&lt;/div&gt;&lt;div&gt;Tarjeta de debito asociada:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Numero: 1234 1234 1234 1234&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Expiracion: 2028/06&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; CVV: 171&lt;/div&gt;" style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="530" y="234" width="260" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-14" value="* A cada clase creele los constructores a su gusto; pero cumpliendo las reglas del diagrama." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="30" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-15" value="Ejemplo de imprimir:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="210" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-16" value="* Si la tarjeta es null entonces no imprima su información.&lt;div&gt;* la fecha de expiracion debe imprimirla en el formato de fecha: YYYY/MM&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="411" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v_BKfeOyPPoS5dGcqgbi-17" value="en CuentaAhorro:&lt;div&gt;* al construir, saldo debe iniciar en cero.&lt;/div&gt;&lt;div&gt;* metodo para depositar sumara el monto al saldo, no se admite monto negativo.&lt;/div&gt;&lt;div&gt;* metodo para retirar resrtara el monto al sado, no se permite monto negativo y no se permite retirar mas de lo que hay en la cuenta.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="360" width="200" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
