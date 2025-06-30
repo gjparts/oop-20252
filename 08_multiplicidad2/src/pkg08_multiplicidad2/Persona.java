@@ -56,5 +56,22 @@ public class Persona {
                 }
             }
         }
+        
+        //Coleccion de Diplomas
+        //ignorar si es null
+        if( this.diplomas != null ){
+            //ignorar si no tiene elementos
+            if( this.diplomas.size() > 0 ){
+                System.out.println("Diplomas:");
+                //recorrer la coleccion
+                for( int i = 0; i < diplomas.size(); i++ ){
+                    //ignorar aquellos elementos que sean null
+                    if( diplomas.get(i) != null ){
+                        System.out.println("\t- "+diplomas.get(i).nombre);
+                        System.out.println("\t  "+diplomas.get(i).institucion);
+                    }
+                }
+            }
+        }
     }
 }

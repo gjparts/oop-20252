@@ -1,4 +1,7 @@
 package pkg08_multiplicidad2;
+
+import java.util.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
         Barrio b1 = new Barrio("Villas de Sol", "Oeste", "21102");
@@ -29,6 +32,15 @@ public class Main {
         Mascota l1 = new Mascota("Paquito", "Loro");
         Mascota[] m1 = {g1, null, l1, new Mascota("Rambo","Perro")};
         per3.mascotas = m1;
+        
+        Diploma diplo1 = new Diploma("INFOP","Reparacion de Maquina de Coser");
+        Diploma diplo2 = new Diploma("INFOP","Torno y Fresa");
+        //crear un nuevo LinkedList para la coleccion de diplomas
+        per3.diplomas = new LinkedList();
+        //ya con la coleccion de diplomas inicializar podemos agregarle diplomas:
+        per3.diplomas.add(diplo1);
+        per3.diplomas.add(diplo2);
+        per3.diplomas.add( new Diploma("UDEMY", "Flutter de Cero a Experto"));
         
         per3.imprimir();
     }
