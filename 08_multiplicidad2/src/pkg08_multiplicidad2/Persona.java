@@ -10,6 +10,9 @@ public class Persona {
     public Mascota[] mascotas;
     public LinkedList<Diploma> diplomas; //lista Vinculada que soporta solo objetos Diploma
                           //el tipo encerrado entre < > es un tipo restringido por Generics
+    public Persona conyuge; //atributo cuyo tipo es la misma clase Persona (referencia circular)
+    public LinkedList<Persona> hijos;
+    
     //constructor
     public Persona(String identidad, String nombre, int telefono) {
         this.identidad = identidad;
@@ -31,6 +34,7 @@ public class Persona {
             System.out.println("\tAvenida: "+this.direccion.avenida);
             System.out.println("\tCasa: "+this.direccion.casa);
         }
+        
         //empresaLabora puede ser null (agregacion), si es asi se ignora
         if( this.empresaLabora != null ){
             System.out.println("Empresa donde trabaja: ");
@@ -69,6 +73,29 @@ public class Persona {
                     if( diplomas.get(i) != null ){
                         System.out.println("\t- "+diplomas.get(i).nombre);
                         System.out.println("\t  "+diplomas.get(i).institucion);
+                    }
+                }
+            }
+        }
+        
+        //conyuge se ignora si es null
+        if( this.conyuge != null ){
+            System.out.println("Conyuge: ");
+            System.out.println("\tNombre: "+this.conyuge.nombre);
+            System.out.println("\tTelefono: "+this.conyuge.telefono);
+        }
+        
+        //Coleccion de Hijos
+        //ignorar si es null
+        if( this.hijos != null ){
+            //ignorar si no tiene elementos
+            if( this.hijos.size() > 0 ){
+                System.out.println("Hijos:");
+                //recorrer la coleccion
+                for( int i = 0; i < hijos.size(); i++ ){
+                    //ignorar aquellos elementos que sean null
+                    if( hijos.get(i) != null ){
+                        System.out.println("\t- "+hijos.get(i).nombre);
                     }
                 }
             }

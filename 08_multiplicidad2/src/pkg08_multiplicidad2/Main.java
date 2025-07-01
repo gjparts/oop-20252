@@ -43,5 +43,24 @@ public class Main {
         per3.diplomas.add( new Diploma("UDEMY", "Flutter de Cero a Experto"));
         
         per3.imprimir();
+        
+        Persona per4 = new Persona("1111111", "Son Goku", 55555555);
+        Persona per5 = new Persona("7777777", "Milk", 12341234);
+        Persona per6 = new Persona("2222222", "Son Gohan", 43334333);
+        Persona per7 = new Persona("4444444", "Son Gotenk", 87878787);
+        
+        //relacion familiar entre per4 y per5:
+        per4.conyuge = per5;
+        per5.conyuge = per4;
+        
+        //hijos en comun entre per4 y per5
+        per4.hijos = new LinkedList();
+        per4.hijos.add(per6);
+        per4.hijos.add(per7);
+        
+        per5.hijos = per4.hijos; //relacionar la coleccion de hijos de per4 con per5
+        
+        per4.imprimir();
+        per5.imprimir();
     }
 }
