@@ -32,6 +32,15 @@ public class Main {
         Empleado em2 = new Empleado("Gerardo", 42, 'M', 10000, "Docente");
         em2.saludar();
         em2.trabajar();
+        
+        Catedratico cat1 = new Catedratico("Ing. Electrico", "Rafael Flores", 65, 'M', 18000);
+        cat1.saludar();
+        cat1.trabajar();
+        cat1.educar();
+        
+        Practicante prac1 = new Practicante(6, "Pedro Picapiedra", 42, 'M', 3000);
+        prac1.saludar();
+        prac1.trabajar();
     }
     
 }
