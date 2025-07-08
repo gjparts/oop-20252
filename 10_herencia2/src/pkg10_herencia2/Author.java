@@ -1,6 +1,6 @@
 package pkg10_herencia2;
 public class Author {
-    //atributes
+    //attributes/properties
     public String name;
     public String website;
     public String email;

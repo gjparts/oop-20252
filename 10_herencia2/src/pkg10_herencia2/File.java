@@ -2,7 +2,7 @@ package pkg10_herencia2;
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
 public class File {
-    //atributes/properties
+    //attributes/properties
     public String name;
     public long size;
     private String type;
