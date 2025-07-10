@@ -30,4 +30,9 @@ public class Gato extends Animal {
         System.out.println("Apodo: "+this.apodo);
         System.out.println("Tiene pelaje: "+( this.tienePelaje ? "Si" : "No" ));
     }
+    //tambien puede hacer Override a un metodo que viene desde Object
+    @Override
+    public String toString(){
+        return "Soy un gato.";
+    }
 }
