@@ -35,6 +35,39 @@ public class Main {
         s1.vivir();
         System.out.println("----------------");
         s2.vivir();
+        
+        //prueba de los metodos estaticos
+        SerVivo.algo();
+        System.out.println( SerVivo.sumar(4, 5) );
+        //con el metodo de instanciacion es posible crear un nuevo
+        //objeto de clase SerVivo que en realidad es un objeto hijo compatible
+        System.out.println("--------s3------------");
+        SerVivo s3 = SerVivo.getInstance();
+        s3.vivir();
+        
+        //tambien es posible instanciar un objeto de la clase abstracta
+        //por medio de la implementacion de sus metodos abstractos en el
+        //momento de la inicializacion del objeto
+        SerVivo loro = new SerVivo("Ave"){
+            @Override
+            public void hablar() {
+                System.out.println("Fiufiuuuuuuu");
+            }
+            @Override
+            public void desplazarse() {
+                System.out.println("Puede volar pero no lo dejan");
+            }
+            @Override
+            public void alimentarse() {
+                System.out.println("Come semillas, bichos y masa");
+            }
+            @Override
+            public void dormir() {
+                System.out.println("Duerme de pie");
+            }
+        };
+        System.out.println("---------------------------");
+        loro.vivir();
     }
     
 }
