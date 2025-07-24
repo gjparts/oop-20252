@@ -36,8 +36,8 @@ CREATE TABLE Producto(
 )
 GO
 
---borrar una tabla
-USE BASE_DE_DATOS_DONDE_ESTA_LA_TABLA
+--borrar una tabla (destruye la tabla, aunque este en uso)
+USE Gerardo --BASE_DE_DATOS_DONDE_ESTA_LA_TABLA
 GO
 DROP TABLE Producto
 GO
