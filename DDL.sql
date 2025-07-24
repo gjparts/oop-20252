@@ -49,3 +49,23 @@ TRUNCATE TABLE Producto
 GO
 --en SQL SERVER Truncate tambien reinicia el campo IDENTITY
 
+--Agregar una columna a una tabla que ya existe
+USE Gerardo
+GO
+ALTER TABLE Producto
+ADD Color VARCHAR(20) NULL
+GO
+
+--Eliminar una columna de una tabla
+USE Gerardo
+GO
+ALTER TABLE Producto
+DROP COLUMN Color
+GO
+
+--cambiar el tamaño de una columna
+USE Gerardo
+GO
+ALTER TABLE Producto
+ALTER COLUMN Nombre VARCHAR(255) NOT NULL
+GO
