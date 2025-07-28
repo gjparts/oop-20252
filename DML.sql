@@ -55,3 +55,61 @@ SELECT Codigo, Nombre, Comentarios FROM Producto
 SELECT Nombre, PrecioVenta, Costo, Existencias FROM Producto
 --mostrar todas las filas de la tabla Producto pero solo ver las columnas Costo, PrecioVenta y Codigo
 SELECT Costo, PrecioVenta, Codigo FROM Producto
+
+--tambien puede colocar alias a las columnas
+--cuando son varias palabras utilice corchetes
+SELECT	ProductoID as Numero, Codigo,
+		Nombre as [Nombre del Producto],
+		PrecioVenta as [Precio de Venta],
+		Comentarios as Observaciones
+FROM Producto
+
+--Campos calculados
+SELECT	Codigo, Nombre, Costo, PrecioVenta,
+		PrecioVenta-Costo as Utilidad,
+		PrecioVenta*0.15 as [I.S.V.],
+		POWER(Costo,2) as [Costo al cuadrado],
+		SQRT(PrecioVenta) as RaizVenta,
+		(PrecioVenta-Costo)/Costo*100 as [Desviacion Estandar de Utilidad vs Costo]
+FROM Producto
+
+--Ordenar la informacion
+--Todos los productos ordenados por costo de menor a mayor
+SELECT *
+FROM Producto
+ORDER BY Costo ASC
+
+--Todos los productos ordenados por nombre ascendentemente
+SELECT Codigo, Nombre, PrecioVenta, Costo
+FROM Producto
+ORDER BY Nombre ASC
+
+--Puede ordenar por determinado campo aunque no se mencione
+--en el SELECT
+--todos los productos, mostrar solo nombre y codigo
+--ordenados por sus existencias de mayor a menor (DESCENDANT)
+SELECT Codigo, Nombre
+FROM Producto
+ORDER BY Existencias DESC
+
+--ordenar usando como criterio mas de un campo
+--todos los productos ordenados primero por precio de venta
+--de mayor a menor y luego por nombre de menor a mayor.
+SELECT Codigo, Nombre, PrecioVenta
+FROM Producto
+ORDER BY PrecioVenta DESC, Nombre ASC
+
+--se puede ordenar por un campo calculado?
+--Si se puede, ejemplo: ordenar todos los productos de acuerdo
+--a las ganancias que dejan de mayor a menor.
+SELECT Codigo, Nombre, PrecioVenta-Costo as Utilidad
+FROM Producto
+ORDER BY Utilidad DESC
+--En SQL SERVER de Microsoft, a partir de 2016 se puede ordenar
+--un campo calculado por su ALIAS; pero en versiones anteriores
+--o en otros motores como MySQL u ORACLE probablemente no
+--Ahi debe ordenar de la manera siguiente:
+SELECT Codigo, Nombre, PrecioVenta-Costo as Utilidad
+FROM Producto
+ORDER BY PrecioVenta-Costo DESC
+--note que se pone el calculo sin el AS ALIAS
