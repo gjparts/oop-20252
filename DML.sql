@@ -113,3 +113,76 @@ SELECT Codigo, Nombre, PrecioVenta-Costo as Utilidad
 FROM Producto
 ORDER BY PrecioVenta-Costo DESC
 --note que se pone el calculo sin el AS ALIAS
+
+--Funciones de agregado
+--cantidad de registros en la tabla producto
+SELECT COUNT(ProductoID) FROM Producto
+--cantidad de productos con mas de 50 existencias
+SELECT COUNT(ProductoID) FROM Producto WHERE Existencias > 50
+--el where lo explico mas adelante.
+--mostrar la suma del costo de todos los productos
+SELECT SUM(Costo) FROM Producto
+--mostrar la suma del costo de aquellos productos con 100 o mas existencias
+SELECT SUM(Costo) FROM Producto WHERE Existencias >= 100
+--es importante colocarle ALIAS a las columnas de agregado:
+SELECT SUM(Costo) as [Costo Total] FROM Producto WHERE Existencias >= 100
+--puede tener varias funciones de agregado por consulta:
+--suma del costo de todos los productos asi como la cantidad de productos:
+SELECT COUNT(ProductoID) as Cantidad, SUM(Costo) as [Costo Total] FROM Producto
+--mostrar el precio de venta promedio de todos los productos
+SELECT AVG(PrecioVenta) as Promedio FROM Producto
+--tambien puede usar funciones de agregado en campos calculados:
+--ganancia total por unidad de todos los productos:
+SELECT SUM(PrecioVenta-Costo) as [Utilidad Total por Unidad],
+SUM((PrecioVenta-Costo)*Existencias) as [Utilidad Total del Inventario]
+FROM Producto
+--mostrar el precio del producto mas cargo de mi inventario
+SELECT MAX(PrecioVenta) FROM Producto
+--cual es ese producto o productos?
+SELECT Codigo, Nombre FROM Producto WHERE PrecioVenta = ( SELECT MAX(PrecioVenta) FROM Producto )
+--mostrar ProductoID mas grande que se ha generado
+SELECT MAX(ProductoID) FROM Producto
+--que costo de producto es el mas bajito?
+SELECT MIN(Costo) FROM Producto
+--cual es ese producto o productos?
+SELECT Codigo, Nombre FROM Producto WHERE PrecioVenta = ( SELECT MIN(Costo) FROM Producto )
+--se puede combinar funciones de agregado con campos normales?
+--Si; pero se necesita de agrupamiento (GROUP BY)
+--Cantidad de veces que esta cada nombre de producto
+SELECT Nombre, COUNT(Codigo) as Cantidad
+FROM Producto
+GROUP BY Nombre
+
+--mostrar los primeros 5 registros de la tabla Producto
+SELECT TOP(5) Codigo, Nombre FROM Producto
+--tambien se puede usar con *
+SELECT TOP(5) * FROM Producto
+
+--mostrar el producto mas caro de vender
+SELECT TOP(1) Codigo, Nombre, PrecioVenta FROM Producto ORDER BY PrecioVenta DESC
+
+--mostrar los ultimos 5 productos en base a su llave primaria
+SELECT TOP(5) Codigo, Nombre FROM Producto ORDER BY ProductoID DESC
+
+--mostrar el producto menos costoso
+SELECT TOP(1) Codigo, Nombre FROM Producto ORDER BY Costo ASC
+
+--Trabajar con valores NULL
+--reemplazar NULL por algun varchar a la hora de la consulta
+SELECT Codigo, Nombre, ISNULL(Comentarios,'Sin comentarios') as Comentarios FROM Producto
+--esto no afecta la informacion almacenada
+
+--filtrar La informacion de una consulta: uso de WHERE
+--Producto cuyo codigo sea AG11
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta 
+FROM Producto
+WHERE Codigo = 'AG11'
+--Productos cuyos codigos sean AG11, CC01, CC03
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta 
+FROM Producto
+WHERE Codigo IN ('AG11','CC01','CC03')
+--IN tambien se puede usar en campos numericos
+--Productos cuyo ProductoID sea 4, 8, 11, 15
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta 
+FROM Producto
+WHERE ProductoID IN (4,8,11,15)
