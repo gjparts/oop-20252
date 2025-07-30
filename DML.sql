@@ -186,3 +186,78 @@ WHERE Codigo IN ('AG11','CC01','CC03')
 SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta 
 FROM Producto
 WHERE ProductoID IN (4,8,11,15)
+
+--puede combinar el operador NOT con IN
+--productos cuyo codigo NO sea CC01 o CC03
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta 
+FROM Producto
+WHERE NOT Codigo IN ('CC01','CC03')
+
+--uso del operador LIKE (parecido)
+--solo se puede usar en campos que manejen texto
+--productos que llevan la palabra salud en cualquier parte del comentario
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta, Comentarios
+FROM Producto
+WHERE Comentarios LIKE '%salud%'
+
+--productos que llevan la palabra buen en cualquier parte del comentario
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta, Comentarios
+FROM Producto
+WHERE Comentarios LIKE '%BUEN%'
+
+--productos cuyo nombre comience con la letra A
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta, Comentarios
+FROM Producto
+WHERE Nombre LIKE 'a%'
+
+--productos cuyo nombre termine con la letra A
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta, Comentarios
+FROM Producto
+WHERE Nombre LIKE '%a'
+
+--y el operador modulo?
+--productos cuyo ProductoID sea PAR
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta, Comentarios
+FROM Producto
+WHERE ProductoID%2 = 0
+
+--uso de operadores logicos
+--productos que lleven la palabra salud y la palabra mal en cualquier
+--parte de su comentario
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta, Comentarios
+FROM Producto
+WHERE Comentarios LIKE '%salud%' AND Comentarios LIKE '%mal%'
+
+--productos cuyo comentario lleve la palabra mal y cuyo precio
+--de venta sea mayor o igual a 70
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta, Comentarios
+FROM Producto
+WHERE Comentarios LIKE '%mal%' AND PrecioVenta >= 70
+
+--productos cuyo costo sea menor a 4 ó cuyo costo sea mayor a 60
+SELECT ProductoID, Codigo, Nombre, Costo, PrecioVenta, Comentarios
+FROM Producto
+WHERE Costo < 4 OR Costo > 60
+
+/*Instruccion DELETE: elimina uno o varios registros de una tabla
+dependiendo del filtrado que utilice.
+-> esta instruccion no altera campos IDENTITY
+-> Se recomienda que antes de hacer DELETE haga prueba de sus
+   WHERE por medio de un SELECT.
+-> Si algun registro de la tabla tiene asociacion con otra tabla
+   o sea llave foranea no se elimina ese registro.*/
+
+--borrar todos los registros de una tabla
+SELECT * FROM Producto
+DELETE FROM Producto
+
+--eliminar todos los productos cuyo costo sea menor o igual que 5
+--vista previa:
+SELECT *
+FROM Producto
+WHERE Costo <= 5
+--borrar:
+DELETE FROM Producto
+WHERE Costo <= 5
+
+
