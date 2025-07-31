@@ -251,6 +251,9 @@ dependiendo del filtrado que utilice.
 SELECT * FROM Producto
 DELETE FROM Producto
 
+USE GERARDO
+GO
+
 --eliminar todos los productos cuyo costo sea menor o igual que 5
 --vista previa:
 SELECT *
@@ -260,4 +263,66 @@ WHERE Costo <= 5
 DELETE FROM Producto
 WHERE Costo <= 5
 
+--eliminar el producto cuyo ProductoID sea 32
+SELECT * FROM Producto WHERE ProductoID = 32
+DELETE FROM Producto WHERE ProductoID = 32
 
+--eliminar los productos cuyo comentario sea malo para la salud
+SELECT * FROM Producto
+WHERE Comentarios LIKE '%salud%' AND Comentarios LIKE '%mal%'
+
+DELETE FROM Producto WHERE Comentarios LIKE '%salud%' AND Comentarios LIKE '%mal%'
+
+--recordatorio: la instruccion DDL llamada TRUNCATE borra todo el contenido
+--de una tabla y reinicia su campo IDENTITY en SQL SERVER. TRUNCATE no se puede usar con WHERE.
+TRUNCATE TABLE Producto
+
+/*Instruccion UPDATE
+Modifica uno o varios registros de una tabla.
+-> Se recomienda utilizarlo junto a WHERE
+-> Se recomienda hacer una vista previa por medio de SELECT para saber que registros va a afectar*/
+
+--dejar en cero todas las existencias de todos los registros de la tabla producto
+SELECT * FROM Producto --vista previa
+UPDATE Producto SET Existencias = 0
+
+--colocar en 100 tdas las existencias del producto con codigo AG11
+SELECT * FROM Producto WHERE Codigo = 'AG11'
+UPDATE Producto SET Existencias = 100 WHERE Codigo = 'AG11'
+
+--puede afectar mas de un campo
+--colocar el costo en 10 y las existencias en 50 para ProductoID = 3
+SELECT * FROM Producto WHERE ProductoID = 3
+UPDATE Producto SET Costo = 10, Existencias = 50 WHERE ProductoID = 3
+
+--colocar en 200 las existencias para los productos con codigo CC02 y CC03
+SELECT * FROM Producto WHERE Codigo IN ('CC02','CC03')
+UPDATE Producto SET Existencias = 200 WHERE Codigo IN ('CC02','CC03')
+
+--UPDATE tambien puede trabajar sobre los datos que ya estan almacenados
+--aumentar en 1 las existencias del producto con codigo FR02
+SELECT * FROM Producto WHERE Codigo = 'FR02'
+UPDATE Producto SET Existencias = Existencias + 1 WHERE Codigo = 'FR02'
+
+--se puede usar cualquier operacion matematica en UPDATE
+--subir los precios de venta en un 10% para todos los productos
+SELECT * FROM Producto
+UPDATE Producto SET PrecioVenta = PrecioVenta*1.10
+
+--puede tambien hacer una vista previa de como va a quedar un aumento
+--subir el costo de todos los productos en un 10%
+SELECT Costo, Costo*1.10 as [Nuevo Costo] FROM Producto
+UPDATE Producto SET Costo = Costo*1.10
+SELECT * FROM Producto
+
+--se puede tambien cambiar campos de texto
+--cambiar el nombre al producto con codigo VD45 y ponerle Lechuga Romana Unidad
+SELECT * FROM Producto WHERE Codigo = 'VD45'
+UPDATE Producto SET Nombre = 'Lechuga Romana Unidad' WHERE Codigo = 'VD45'
+
+--se puede concatenar tambien sobre el contenido de un campo de texto
+--agregar la palabra REVISADO al comentario de los productos con codigo FR01, FR02 y PR99
+SELECT * FROM Producto WHERE Codigo IN ('FR01','FR02','PR99')
+
+UPDATE Producto SET Comentarios = CONCAT(ISNULL(Comentarios,''),' REVISADO')
+WHERE Codigo IN ('FR01','FR02','PR99')
