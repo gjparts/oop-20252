@@ -1,0 +1,10 @@
+C:\Users\Gerardo\source\repos\Final202502\Final202502\bin\Debug\Final202502.exe.config
+C:\Users\Gerardo\source\repos\Final202502\Final202502\bin\Debug\Final202502.exe
+C:\Users\Gerardo\source\repos\Final202502\Final202502\bin\Debug\Final202502.pdb
+C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.csproj.AssemblyReference.cache
+C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.Properties.Resources.resources
+C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.csproj.GenerateResource.cache
+C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.csproj.CoreCompileInputs.cache
+C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.exe
+C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.pdb
+C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.exe.config
