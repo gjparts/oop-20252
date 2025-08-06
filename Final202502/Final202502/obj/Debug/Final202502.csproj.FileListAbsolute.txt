@@ -8,3 +8,14 @@ C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.cspr
 C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.exe
 C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.pdb
 C:\Users\Gerardo\source\repos\Final202502\Final202502\obj\Debug\Final202502.exe.config
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\bin\Debug\Final202502.exe.config
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\bin\Debug\Final202502.exe
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\bin\Debug\Final202502.pdb
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.csproj.AssemblyReference.cache
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.exe.config
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.Principal.resources
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.Properties.Resources.resources
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.csproj.GenerateResource.cache
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.csproj.CoreCompileInputs.cache
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.exe
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.pdb
