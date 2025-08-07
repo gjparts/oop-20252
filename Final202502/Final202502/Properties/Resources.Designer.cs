@@ -61,7 +61,7 @@ namespace Final202502.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to server=DESKTOP-8QOLEL8;database=Gerardo;User Id=sa;pwd=1234;.
+        ///   Looks up a localized string similar to server=DESKTOP-8QOLEL8;database=Gerardo;user=sa;pwd=1234;.
         /// </summary>
         internal static string CadenaConexion {
             get {

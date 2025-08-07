@@ -3,19 +3,16 @@
   "WorkspaceRootPath": "C:\\Programas UNAH\\2025-2\\Programacion Orientada a Objetos\\Final202502\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Final202502||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{F2C71CFC-5B01-4A1F-9214-359FCDFFA5FC}|Final202502\\Final202502.csproj|c:\\programas unah\\2025-2\\programacion orientada a objetos\\final202502\\final202502\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C71CFC-5B01-4A1F-9214-359FCDFFA5FC}|Final202502\\Final202502.csproj|solutionrelative:final202502\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C71CFC-5B01-4A1F-9214-359FCDFFA5FC}|Final202502\\Final202502.csproj|c:\\programas unah\\2025-2\\programacion orientada a objetos\\final202502\\final202502\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F2C71CFC-5B01-4A1F-9214-359FCDFFA5FC}|Final202502\\Final202502.csproj|C:\\Programas UNAH\\2025-2\\Programacion Orientada a Objetos\\Final202502\\final202502\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F2C71CFC-5B01-4A1F-9214-359FCDFFA5FC}|Final202502\\Final202502.csproj|solutionrelative:final202502\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2C71CFC-5B01-4A1F-9214-359FCDFFA5FC}|Final202502\\Final202502.csproj|C:\\Programas UNAH\\2025-2\\Programacion Orientada a Objetos\\Final202502\\final202502\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2C71CFC-5B01-4A1F-9214-359FCDFFA5FC}|Final202502\\Final202502.csproj|solutionrelative:final202502\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C71CFC-5B01-4A1F-9214-359FCDFFA5FC}|Final202502\\Final202502.csproj|c:\\programas unah\\2025-2\\programacion orientada a objetos\\final202502\\final202502\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{F2C71CFC-5B01-4A1F-9214-359FCDFFA5FC}|Final202502\\Final202502.csproj|solutionrelative:final202502\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 246,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Principal.cs",
+              "DocumentMoniker": "C:\\Programas UNAH\\2025-2\\Programacion Orientada a Objetos\\Final202502\\Final202502\\Principal.cs",
+              "RelativeDocumentMoniker": "Final202502\\Principal.cs",
+              "ToolTip": "C:\\Programas UNAH\\2025-2\\Programacion Orientada a Objetos\\Final202502\\Final202502\\Principal.cs",
+              "RelativeToolTip": "Final202502\\Principal.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAvwEIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T15:12:05.502Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -51,18 +61,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T15:28:47.342Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Final202502",
-              "DocumentMoniker": "C:\\Programas UNAH\\2025-2\\Programacion Orientada a Objetos\\Final202502\\Final202502\\Final202502.csproj",
-              "RelativeDocumentMoniker": "Final202502\\Final202502.csproj",
-              "ToolTip": "C:\\Programas UNAH\\2025-2\\Programacion Orientada a Objetos\\Final202502\\Final202502\\Final202502.csproj",
-              "RelativeToolTip": "Final202502\\Final202502.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-05T15:38:36.742Z",
-              "EditorCaption": ""
             }
           ]
         }
