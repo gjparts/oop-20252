@@ -19,3 +19,4 @@ C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final20250
 C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.csproj.CoreCompileInputs.cache
 C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.exe
 C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.pdb
+C:\Programas UNAH\2025-2\Programacion Orientada a Objetos\Final202502\Final202502\obj\Debug\Final202502.Detalle.resources

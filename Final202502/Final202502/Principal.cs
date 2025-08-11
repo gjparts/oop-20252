@@ -65,6 +65,33 @@ namespace Final202502
         private void Principal_Load(object sender, EventArgs e)
         {
             cargarDatos();
+
+            //personalizar nuestro grid
+            //ocultar el selector de filas
+            grid1.RowHeadersVisible = false;
+            //evitar que se pueda agregar filas al grid
+            grid1.ReadOnly = true;
+            grid1.AllowUserToAddRows = false;
+            grid1.AllowUserToDeleteRows = false;
+            grid1.AllowUserToResizeRows = false;
+
+            //colocar titulo a algunas columnas
+            grid1.Columns["ProductoID"].HeaderText = "Numero de Item";
+            grid1.Columns["PrecioVenta"].HeaderText = "Precio de Venta";
+
+            //alineacion del texto de algunas columnas
+            grid1.Columns["PrecioVenta"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grid1.Columns["Costo"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grid1.Columns["Existencias"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+
+            grid1.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //selecion de fila completa
+        }
+
+        private void botonAgregar_Click(object sender, EventArgs e)
+        {
+            //mandar a llamar un nuevo form Detalle
+            Detalle d = new Detalle();
+            d.ShowDialog();
         }
     }
 }
