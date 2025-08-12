@@ -50,7 +50,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 36);
+            this.label1.Size = new System.Drawing.Size(98, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo:";
             // 
@@ -98,7 +98,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 36);
+            this.label3.Size = new System.Drawing.Size(82, 29);
             this.label3.TabIndex = 4;
             this.label3.Text = "Costo:";
             // 
@@ -118,7 +118,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 36);
+            this.label4.Size = new System.Drawing.Size(140, 29);
             this.label4.TabIndex = 6;
             this.label4.Text = "Existencias:";
             // 
@@ -138,7 +138,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 149);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(238, 36);
+            this.label5.Size = new System.Drawing.Size(190, 29);
             this.label5.TabIndex = 8;
             this.label5.Text = "Precio de Venta:";
             // 
@@ -157,7 +157,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 229);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(195, 36);
+            this.label6.Size = new System.Drawing.Size(156, 29);
             this.label6.TabIndex = 10;
             this.label6.Text = "Comentarios:";
             // 
@@ -216,18 +216,18 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox codigo;
-        private System.Windows.Forms.TextBox nombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox costo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox existencias;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox precioVenta;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox comentarios;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button aceptar;
         private System.Windows.Forms.Button cancelar;
+        public System.Windows.Forms.TextBox codigo;
+        public System.Windows.Forms.TextBox nombre;
+        public System.Windows.Forms.TextBox costo;
+        public System.Windows.Forms.TextBox existencias;
+        public System.Windows.Forms.TextBox precioVenta;
+        public System.Windows.Forms.TextBox comentarios;
     }
 }
